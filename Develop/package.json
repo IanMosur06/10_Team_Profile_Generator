@@ -1,0 +1,28 @@
+{
+  "name": "challenge_10_team_profile_generator",
+  "version": "1.0.0",
+  "description": "Team Profile Generator",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IanMosur06/Challenge_10_Team_Profile_Generator.git"
+  },
+  "keywords": [
+    "node",
+    "npm",
+    "inquirer"
+  ],
+  "author": "Ian Mosur",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/IanMosur06/Challenge_10_Team_Profile_Generator/issues"
+  },
+  "homepage": "https://github.com/IanMosur06/Challenge_10_Team_Profile_Generator#readme",
+  "dependencies": {
+    "inquirer": "^8.2.4",
+    "jest": "^24.8.0"
+  }
+}
