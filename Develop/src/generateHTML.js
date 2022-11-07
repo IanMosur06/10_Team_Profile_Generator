@@ -112,6 +112,7 @@ generateHTML = (data) => {
   return generateTeam;
 };
 
+
 const generateTeamPage = function (employeeCards) {
     return `
   <!DOCTYPE html>
