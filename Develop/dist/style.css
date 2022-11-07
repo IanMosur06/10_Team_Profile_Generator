@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+  }
+
+.header {
+    text-align: center;
+    font-size: xx-large;
+    line-height: 50px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;  
+}
+
+.info {
+    display: flex;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1024px) {
+}
+
+@media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 480px) {
+}
