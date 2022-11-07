@@ -70,6 +70,48 @@ const generateTeam = team => {
     // use the team array to generate pieces of html based on the employee role
 }
 
+// push array to page
+generateHTML = (data) => {
+
+    pageArray = [];
+  
+    for (let i = 0; i < data.length; i++) {
+      const employee = data[i];
+      const role = employee.getRole();
+
+      if (role === "Manager") {
+        const managerCard = generateManager(employee);
+  
+        pageArray.push(managerCard);
+      }
+
+      if (role === "Engineer") {
+        const engineerCard = generateEngineer(employee);
+  
+        pageArray.push(engineerCard);
+      }
+
+      if (role === "Intern") {
+        const internCard = generateIntern(employee);
+  
+        pageArray.push(internCard);
+      }
+
+      if (role === "It") {
+        const It = It(employee);
+  
+        pageArray.push(ItCard);
+      }
+    }
+
+      // joining strings
+  const employeeCards = pageArray.join("");
+
+  // return to generated page
+  const generateTeam = generateTeamPage(employeeCards);
+  return generateTeam;
+};
+
 const generateTeamPage = function (employeeCards) {
     return `
   <!DOCTYPE html>
@@ -102,7 +144,7 @@ const generateTeamPage = function (employeeCards) {
       </div>
     </main>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-  
+
   </body>
   </html>
   `;
